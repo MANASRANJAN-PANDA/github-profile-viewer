@@ -1,0 +1,1 @@
+# Remove JS Part from GitHub Profile Viewer\n\n## Steps:\n1. ✅ Create this TODO.md\n2. ✅ Remove <script src=\"script.js\"></script> from index.html\n3. ✅ Empty script.js (now ready for new JS)\n4. ✅ Verify static page works (no JS errors)\n5. ✅ Task complete - TODO.md can be deleted\n

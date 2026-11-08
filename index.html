@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Viewer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fab fa-github"></i> GitHub Profile Viewer</h1>
+            <p>Enter any GitHub username to see their profile information</p>
+        </header>
+
+        <main>
+            <div class="search-section">
+                <div class="search-box">
+                    <div class="search-inner">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="usernameInput" placeholder="Enter GitHub username (e.g., octocat)">
+                    </div>
+                    <button id="searchBtn">
+                        <span>Fetch Profile</span>
+                        <div class="spinner"></div>
+                    </button>
+                </div>
+            </div>
+
+            <div id="profileSection" class="profile-section hidden">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <img id="profileImage" src="" alt="Profile Image" class="avatar">
+                        <div class="profile-info">
+                            <h2 id="profileName"></h2>
+                            <p id="profileLogin" class="login"></p>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <span class="stat-number" id="publicRepos">0</span>
+                            <span class="stat-label">Repositories</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="followers">0</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="following">0</span>
+                            <span class="stat-label">Following</span>
+                        </div>
+                    </div>
+
+                    <div class="profile-bio">
+                        <p id="profileBio"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="errorSection" class="error-section hidden">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p id="errorMessage"></p>
+            </div>
+        </main>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
